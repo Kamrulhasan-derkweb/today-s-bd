@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>কুইক কুইজ প্রতিযোগিতা</title>
+</head>
+<body>
+	<center>
+		<h1>ধন্যবাদ </h1>
+	<h2>নিচের লিংকটি কপি করুন এবং আপনার ১০ জন ফেসবুক বন্ধুদের সাথে শেয়ার করুন। এই লিংকটি সর্বোচ্চ শেয়ার কারির জন্য রয়েছে স্মার্টফোন। . </h2>
+
+		<input type="text" value="    " id="myInput">
+<button onclick="myFunction()">Copy </button>
+
+<h3>আমাদের এই ক্যাম্পেইনটি শেষ হওয়ার ৭ কার্যদিবসের মধ্যে আপনার একাউন্টে টাকা পাঠানো হবে। </h3>
+
+
+</center>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+</body>
+</html>
